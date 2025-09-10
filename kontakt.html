@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt - Psychologische Psychotherapie</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html#start">Startseite</a></li>
+        <li><a href="index.html#ueber-mich">Über mich</a></li>
+        <li><a href="index.html#leistungen">Leistungen</a></li>
+        <li><a href="index.html#preise">Preise</a></li>
+        <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="kontakt">
+      <h1>Kontakt</h1>
+      <form id="kontakt-formular" action="#" method="post" novalidate>
+        <label for="name">Name<span aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" required aria-required="true" />
+
+        <label for="email">E-Mail<span aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" required aria-required="true" />
+
+        <label for="nachricht">Nachricht<span aria-hidden="true">*</span></label>
+        <textarea id="nachricht" name="nachricht" rows="5" required aria-required="true"></textarea>
+
+        <button type="submit">Absenden</button>
+      </form>
+      <p id="form-message" role="alert" style="display:none;"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Psychologische Psychotherapie</p>
+  </footer>
+
+  <script src="kontakt.js"></script>
+</body>
+</html>
